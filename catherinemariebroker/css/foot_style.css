@@ -1,0 +1,83 @@
+/* Footer */
+.footer {
+    width:100%;
+    height: 100px;  
+    background: #222;
+}
+
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+    padding-top: 15px;
+  overflow: hidden;
+  font-size: 14px;
+  top: 0;
+}
+
+.footer li {
+  display: inline;
+  top: 0;
+  float: left;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.footer li a {
+  color: dimgray;
+  text-decoration: none;
+  text-align: center;
+}
+
+.footer li {
+  margin-top: 30px;
+}
+
+.footer li:first-child {
+  margin-top: 17px;
+    margin-left: 50px;
+    opacity: .3;
+}
+
+.footer li.nav_left {
+  float: left;
+}
+
+.footer li.nav_right {
+  float: right;
+    padding-right: 50px;
+}
+
+.footer li a:hover, .footer li a i:hover {
+    color: #FFF;
+}
+
+.footer li a button {
+  background-color: rgba(0, 0, 0, 0)/* or possibly #ee094d*/;
+  border: dimgray solid 2px;
+  color: dimgray;
+  padding: 10px 24px;
+  border-radius: 7px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+    margin-top: -15px;
+}
+
+.footer li a:hover button {
+  background-color: #FFF;
+  color: #222;
+    border: #222 solid 2px;
+}
+
+.footer i {
+    font-size: 35px;
+    color: dimgray;
+    margin-top: -12px;
+}
+
+
+/* Media Queries COMMENCE!! */
+@media screen and (max-width: 600px) {
+  .footer {
+    display: none;
+  }
