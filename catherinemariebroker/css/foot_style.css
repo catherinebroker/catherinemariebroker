@@ -3,6 +3,8 @@
     width:100%;
     height: 100px;
     background: #222;
+    z-index: 1;
+    position: relative;
 }
 
 .footer ul {
@@ -13,6 +15,7 @@
   font-size: 14px;
   top: 0;
   margin: 0;
+  z-index
 }
 
 .footer li {
