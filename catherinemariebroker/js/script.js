@@ -14,8 +14,5 @@ function myFunction() {
 };
 
 
-$(window).scroll(function(){
-    $(".section_top").css("opacity", 1 - $(window).scrollTop() / 250);
-  });
 
 /* Fade Out on Scroll Effect */
