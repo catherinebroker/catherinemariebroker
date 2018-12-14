@@ -13,6 +13,7 @@ function myFunction() {
     }
 };
 
+<<<<<<< HEAD
 /* Fade Out on Scroll Effect */
 $(document).on("scroll", function () {
   var pageTop = $(document).scrollTop()
@@ -29,3 +30,11 @@ $(document).on("scroll", function () {
     }
   }
 })
+=======
+
+$(window).scroll(function(){
+    $(".section_top").css("opacity", 1 - $(window).scrollTop() / 250);
+  });
+
+/* Fade Out on Scroll Effect */
+>>>>>>> 2a22867df26ac298725ded24fedd8755af974179
