@@ -1,3 +1,5 @@
+/* TABLET */
+
 @media only screen and (max-width: 1200px) {
     .service_detail_1 {
         float: left;
@@ -7,5 +9,50 @@
     .service_detail_3 {
         float: right;
         margin-right: 5%;
+    }
+}
+
+/* Phones */
+@media only screen and (max-width: 450px) {
+    .section_top {
+      margin:auto;
+      float:none;
+      padding-bottom: -3rem;
+    }
+
+    .codequeen img{
+      max-width: 90%;
+    }
+
+    .section_services {
+      display: block;
+      height: 300vh;
+      text-align: center;
+      float:none;
+      opacity: 5;
+    }
+    .service_detail_1 {
+      float:none;
+    }
+
+    .service_detail_3 {
+      float:none;
+    }
+
+    .section_blog_preview {
+      display: block;
+      height: 300vh;
+      text-align: center;
+      float:none;
+      opacity: 5;
+    }
+    .blog_preview_1 {
+      float:none;
+      opacity: 1;
+    }
+
+    .blog_preview_3 {
+      float:none;
+      opacity: 5;
     }
 }

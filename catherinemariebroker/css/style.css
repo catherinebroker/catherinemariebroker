@@ -39,6 +39,8 @@ h1 {
   padding-top: 12rem;
   -webkit-filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.25));
   filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.25));
+  max-width: 618px;
+  height: auto;
 }
 
 h2 {
