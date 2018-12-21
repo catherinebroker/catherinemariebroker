@@ -85,34 +85,67 @@
 
 /* Media Queries COMMENCE!! */
 @media screen and (max-width: 600px) {
-  .NavBar li a {
-    display: none;
-  }
-  .NavBar li a img{
-    display: inline-block;
-  }
-  .NavBar li a.icon {
-    float: right;
-    display: inline-block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .NavBar.responsive {position: relative;}
-  .navBar.responsive .icon {
-    position: absolute;
-    right: 0;
+  .NavBar {
+    margin: 0;
+    padding: 0;
     top: 0;
-  }
-
-  .navBar.responsive a {
-    float: none;
     background-color: pink;
-    display: block;
-    text-align: center;
+    height: 15%;
   }
-}
 
+  .NavBar ul {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .NavBar li img {
+
+  }
+
+  .NavBar li a {
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .nav_left {
+    display: block;
+    float: none;
+    padding: 0px;
+    margin: auto;
+  }
+
+  .nav_right {
+    display: block;
+    float: none;
+    padding: 0px;
+    margin: auto;
+  }
+
+  li.nav_left {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 20px;
+  }
+
+    li.nav_right {
+      padding-top: 0;
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 0;
+    }
+
+  .NavBar li a.nav_active {
+    background-color: #FFF;
+    color: #ef267a;
+    padding: 5px;
+  }
+
+
+}
 
 
 

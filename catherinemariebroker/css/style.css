@@ -149,6 +149,16 @@ h2 {
     margin-top: 0;
 }
 
+.blog_preview_1 {
+  float: left;
+  margin-left: 10%;
+}
+
+.blog_preview_3 {
+  float: right;
+  margin-right: 9%;
+}
+
 .seemore_banner {
   transform: skew(-20deg);  /* SKEW */
   background: #FFF;
@@ -163,16 +173,6 @@ h2 {
   padding: 15px 0px;
   color: #f71c6d;
   font-size: 24px;
-}
-
-.blog_preview_1 {
-  float: left;
-  margin-left: 10%;
-}
-
-.blog_preview_3 {
-  float: right;
-  margin-right: 9%;
 }
 
 
