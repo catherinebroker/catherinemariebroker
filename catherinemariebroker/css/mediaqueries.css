@@ -1,24 +1,30 @@
 /* TABLET */
 
 @media only screen and (max-width: 1200px) {
-    .service_detail_1 {
+    .service_detail_1, .service_detail_2, .service_detail_3 {
+        width: 224px;
+        height: 256px;
+        font-size: 80%;
+    }
+
+    .blog_preview_1, .blog_preview_2, .blog_preview_3 {
+      width: 224px;
+      height: 272px;
+      font-size: 80%;
+    }
+
+    .service_detail_1, .blog_preview_1 {
         float: left;
         margin-left: 5%;
     }
 
-    .service_detail_3 {
+    .service_detail_3, .blog_preview_3 {
         float: right;
         margin-right: 5%;
     }
 
-    .blog_preview_1 {
-        float: left;
-        margin-left: 5%;
-    }
-
-    .blog_preview_3 {
-        float: right;
-        margin-right: 5%;
+    .blog_preview_1 img, .blog_preview_2 img, .blog_preview_3 img {
+        width: 90%;
     }
 }
 
