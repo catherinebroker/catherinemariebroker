@@ -30,6 +30,10 @@
 
 /* Phones */
 @media only screen and (max-width: 450px) {
+  body {
+      background-position: center;
+    }
+
     .section_top {
       margin:auto;
       float:none;
@@ -49,16 +53,13 @@
       margin-bottom: 7rem;
     }
 
-    .service_detail_1 {
+    .service_detail_1, .service_detail_2, .service_detail_3 {
       float:none;
       margin-left: auto;
       margin-right: auto;
-    }
-
-    .service_detail_3 {
-      float:none;
-      margin-left: auto;
-      margin-right: auto;
+      width: 280px;
+      height: 320px;
+      font-size: 100%;
     }
 
     .section_blog_preview {
@@ -69,17 +70,13 @@
       margin-left: 3%;
       margin-bottom: 7rem;
     }
-    .blog_preview_1 {
+    .blog_preview_1, .blog_preview_2, .blog_preview_3 {
       float:none;
       margin-left: auto;
       margin-right: auto;
-
+      width: 280px;
+      height: 340px;
+      height: 320px;
     }
 
-    .blog_preview_3 {
-      float:none;
-      opacity: 5;
-      margin-left: auto;
-      margin-right: auto;
-    }
 }
