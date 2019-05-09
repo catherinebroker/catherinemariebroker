@@ -1,0 +1,79 @@
+.accesswrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 13px;
+  grid-auto-rows: minmax(auto);
+  width: 800px;
+  margin: 24px auto 40px;
+}
+
+.map {
+  grid-column: 1 / 2;
+  grid-row: 1;
+}
+
+.contactDetails {
+  grid-column: 1 / 2;
+  grid-row: 2;
+}
+
+.contactForm {
+  grid-column: 2 / 3;
+  grid-row: 1 / 4;
+}
+
+.contactForm form p {
+  font-weight: 300;
+}
+
+.contactForm form input, .contactForm form select {
+  width: 100%;
+  height: 39px;
+  border: 1px solid #222;
+  border-radius: 0;
+  margin-bottom: 24px;
+}
+
+.contactForm form input[value] {
+  color: #ccc;
+  /* padding: 0 8px; */
+}
+
+.contactForm form input#submit {
+  color: #FFF;
+  background-color: #222;
+  margin: 10px 97px 0 97px;
+  width: 200px;
+  border: 0px;
+  cursor: pointer;
+}
+
+.contactForm form input#submit:hover {
+  color: #222;
+  background-color: #FFF;
+  margin: 10px 97px 0 97px;
+  width: 200px;
+  border: 1px solid #222;
+  transition: 1s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+。。。

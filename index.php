@@ -90,9 +90,9 @@
         </div>
 
         <div class="details_box work_detail" id="work_detail">
-          <a href="#" target="_blank"><img src="images/img_blog.png"></a><br>
-          <h2>GFTD WORKS</h2>
-          <a href="#" target="_blank"><h3>see more</h3></a>
+          <a href="work/giftedCafeAndBar/index.php" target="_blank"><img src="images/giftedcafe.png" style="width: 233px;"></a><br>
+          <h2>GFTD CAFE & BAR</h2>
+          <a href="#" target="_blank"><h3>(under construction)</h3></a>
           </div>
         </div>
     </section>
