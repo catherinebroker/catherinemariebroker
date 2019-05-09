@@ -1,0 +1,234 @@
+/*
+Pink font/bg color: #ef1965
+Black text color: #222
+*/
+
+body {
+  background-image: url("../images/bg_top.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.details_wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.details_box {
+  position: relative;
+  border: 2px solid white;
+  margin: auto;
+  background-color: rgba(239, 38, 122, .2);
+  flex: 0 1 260px;
+  height: 300px;
+}
+
+.details_box::after {
+  top: -12px;
+  left: -12px;
+  right: 10px;
+  bottom: 10px;
+  content: '';
+  position: absolute;
+  border: 2px solid white;
+  z-index: -1;
+  background-color: rgba(239, 38, 122, .5);
+  flex: 0 1 260px;
+}
+
+
+/* ---------- Top Section (with the logo) ---------- */
+#section_top {
+  height:100vh;
+  display: block;
+}
+
+#codequeen img{
+  display: block;
+  margin:auto;
+  padding-top: 5%;
+  -webkit-filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.25));
+  max-width: 618px;
+  height: auto;
+}
+
+#section_top h2 {
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    font-size: 2em;
+}
+
+/* ---------- Services Section ---------- */
+#section_services {
+  height: 100vh;
+  width: 1000px;
+  text-align: center;
+  margin: auto;
+}
+
+#section_services p {
+  font-size: 1.2em;
+}
+
+.service_detail {
+  padding: 60px 15px 15px 15px;
+}
+
+.service_detail img {
+  display: block;
+  margin: auto;
+  -webkit-filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, 0.5));
+}
+
+.service_detail h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+}
+
+/* ---------- Work Section ---------- */
+#section_work {
+  height: 100vh;
+  width: 1000px;
+  text-align: center;
+  margin: auto;
+}
+
+#section_work p {
+  font-size: 1.2em;
+}
+
+.work_detail {
+  padding: 60px 15px 15px 15px;
+}
+
+.work_detail img {
+  display: block;
+  margin: auto;
+  -webkit-filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, 0.5));
+  opacity: 1;
+  transition: ease .5s;
+}
+
+.work_detail img:hover {
+  opacity: .7;
+  cursor: pointer;
+}
+
+.work_detail h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+#section_work a {
+  color: #FFF;
+  text-transform: uppercase;
+  opacity: .8;
+  transition: .5s ease;
+}
+
+#section_work a:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+
+
+/*******************************************************/
+/******************** Media Queries ********************/
+/*******************************************************/
+
+@media screen and (max-width: 740px) {
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url("../images/bg_top.png") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+  .details_box {
+     margin: 0 auto 40px auto;
+  }
+
+  .details_box::after {
+  }
+
+  /* ---------- Top Section (with the logo) ---------- */
+  #section_top {
+    height:100vh;
+    display: block;
+    margin:0 10px 0 10px;
+  }
+
+  #codequeen img{
+    margin-top: 50%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  #section_top h2 {
+  }
+
+  /* ---------- Services Section ---------- */
+  #section_services {
+    height: auto;
+    width: 100vw;
+    text-align: center;
+    margin: 0 auto 20px auto;
+  }
+
+  #section_services p {
+    font-size: 1.2em;
+  }
+
+  .service_detail {
+    padding: 60px 15px 15px 15px;
+  }
+
+  .service_detail img {
+    display: block;
+    margin: auto;
+    -webkit-filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, 0.5));
+  }
+
+  .service_detail h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+  }
+
+  /* ---------- Work Section ---------- */
+  #section_work {
+    width: 100vw;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #section_work p {
+    font-size: 1.2em;
+  }
+
+  .work_detail {
+    padding: 40px 17px 35px 10px;
+  }
+
+}
