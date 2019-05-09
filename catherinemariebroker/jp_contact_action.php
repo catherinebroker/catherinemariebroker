@@ -104,16 +104,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div id="contactForm">
           <p style="font-weight: 600; font-size: 1.2em"><?=$messageStatus;?></p>
 
-          <p style="margin-bottom: 10px;">名前：</p>
+          <p style="margin-bottom: 10px; text-transform: uppercase;">名前：</p>
             <p style="color: gray; margin: 0;"><span><?=$name;?></span><span class="error"><?=$nameErr;?></span></p>
 
-          <p style="margin-bottom: 10px;">メールアドレス：</p>
+          <p style="margin-bottom: 10px; text-transform: uppercase;">メールアドレス：</p>
             <p style="color: gray; margin: 0;"><span><?=$email;?></span><span class="error"><?=$emailErr;?></span></p>
 
-          <p style="margin-bottom: 10px;">件名：</p>
+          <p style="margin-bottom: 10px; text-transform: uppercase;">件名：</p>
           <p style="color: gray; margin: 0;"><span><?=$subject;?></span><span class="error"><?=$subjectErr;?></span></p>
 
-          <p style="margin-bottom: 10px;">メッセージ：</p>
+          <p style="margin-bottom: 10px; text-transform: uppercase;">メッセージ：</p>
             <p style="color: gray; margin: 0;"><span><?=$message;?></span><span class="error"><?=$messageErr;?></span></p>
         </div>
         <a href="contact.php" id="tryAgainButton"><?=$tryAgainButton?></a>

@@ -1,0 +1,279 @@
+<!doctype html>
+    <html lang="en-US">
+        <head>
+            <meta charset="UTF-8">
+
+            <title>Circus Roppongi</title>
+
+            <!-- Main Stylesheet-->
+            <link rel= "stylesheet" type= "text/css" href= "css/style.css">
+
+            <!--Helps size change across multiple screen sizes-->
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <!-- Slider -->
+            <script src="js/jssor.slider-27.1.0.min.js"></script>
+
+            <!-- Instagram -->
+            <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+            <link rel="shortcut icon" href="images/favicon.png"/>
+
+
+        </head>
+
+        <body>
+
+        <div class="container">
+
+            <div class="item-a">
+                <!-- Navbar Start -->
+
+                <div class="topnav" id="myTopnav">
+                    <a href="#home" class="active"><img src="images/logo.png"></a>
+                    <a href="index.html">Top</a>
+                    <a href="concept.html">Concept</a>
+                    <a href="rooms.html">Rooms</a>
+                    <a href="bbq.html">BBQ</a>
+
+                    <a href="tel:080-9020-9245" class="numberz"><p>080-9020-9245</p>電話受付 24時間対応</a>
+                    <div class="btn_menu">
+                      <img src="images/btn_menu.png" style="max-width:60%;height:auto;" href="javascript:void(0);" onclick="myFunction()">
+                    </div>
+                    </div>
+
+                    <script>
+                    function myFunction() {
+                        var x = document.getElementById("myTopnav");
+                        if (x.className === "topnav") {
+                            x.className += " responsive";
+                        } else {
+                            x.className = "topnav";
+                        }
+                    }
+                    </script>
+                <!-- Navbar End -->
+
+            </div>
+
+            <div class="item-b">
+                <div class="video">
+       <video width="1040" playsinline autoplay muted loop>
+       <source src="images/top.mp4" type="video/mp4" media="all and (min-width: 641px)">
+       <source src="images/top_mobile.mp4" type="video/mp4" media="all and (max-width: 640px)">
+       <source src="mov_bbb.ogg" type="video/ogg">
+       <source src="mov_bbb.ogg" type="video/ogg">
+       Your browser does not support HTML5 video.
+       </video><script>
+    document.getElementById('vid').play();
+
+
+</script>
+
+       </div>
+         <!--
+            <div class="videomobile">
+       <video width="640" playsinline autoplay muted loop>
+       <source src="images/top_mobile.mp4" type="video/mp4">
+       <source src="mov_bbb.ogg" type="video/ogg">
+       Your browser does not support HTML5 video.
+       </video><script>
+    document.getElementById('vid').play();
+</script>
+
+       </div>-->
+
+
+                <div id="imageblock">
+                    <img src="images/barwords.png" style="max-width:100%;height:auto;">
+
+
+                </div>
+
+                <div class="slider">
+                <!-- #region Jssor Slider Begin -->
+    <!-- Generator: Jssor Slider Maker -->
+    <!-- Source: https://www.jssor.com -->
+    <script src="js/jssor.slider-27.1.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jssor_1_slider_init = function() {
+
+            var jssor_1_SlideoTransitions = [
+              [{b:0,d:600,y:-290,e:{y:27}}],
+              [{b:0,d:1000,y:185},{b:1000,d:500,o:-1},{b:1500,d:500,o:1},{b:2000,d:1500,r:360},{b:3500,d:1000,rX:30},{b:4500,d:500,rX:-30},{b:5000,d:1000,rY:30},{b:6000,d:500,rY:-30},{b:6500,d:500,sX:1},{b:7000,d:500,sX:-1},{b:7500,d:500,sY:1},{b:8000,d:500,sY:-1},{b:8500,d:500,kX:30},{b:9000,d:500,kX:-30},{b:9500,d:500,kY:30},{b:10000,d:500,kY:-30},{b:10500,d:500,c:{x:125.00,t:-125.00}},{b:11000,d:500,c:{x:-125.00,t:125.00}}],
+              [{b:0,d:600,x:535,e:{x:27}}],
+              [{b:-1,d:1,o:-1},{b:0,d:600,o:1,e:{o:5}}],
+              [{b:-1,d:1,c:{x:250.0,t:-250.0}},{b:0,d:800,c:{x:-250.0,t:250.0},e:{c:{x:7,t:7}}}],
+              [{b:-1,d:1,o:-1},{b:0,d:600,x:-570,o:1,e:{x:6}}],
+              [{b:-1,d:1,o:-1,r:-180},{b:0,d:800,o:1,r:180,e:{r:7}}],
+              [{b:0,d:1000,y:80,e:{y:24}},{b:1000,d:1100,x:570,y:170,o:-1,r:30,sX:9,sY:9,e:{x:2,y:6,r:1,sX:5,sY:5}}],
+              [{b:2000,d:600,rY:30}],
+              [{b:0,d:500,x:-105},{b:500,d:500,x:230},{b:1000,d:500,y:-120},{b:1500,d:500,x:-70,y:120},{b:2600,d:500,y:-80},{b:3100,d:900,y:160,e:{y:24}}],
+              [{b:0,d:1000,o:-0.4,rX:2,rY:1},{b:1000,d:1000,rY:1},{b:2000,d:1000,rX:-1},{b:3000,d:1000,rY:-1},{b:4000,d:1000,o:0.4,rX:-1,rY:-1}]
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $Idle: 2000,
+              $CaptionSliderOptions: {
+                $Class: $JssorCaptionSlideo$,
+                $Transitions: jssor_1_SlideoTransitions,
+                $Breaks: [
+                  [{d:2000,b:1000}]
+                ]
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 1024;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700&subset=latin-ext,vietnamese,latin,cyrillic" rel="stylesheet" type="text/css" />
+    <style>
+        /*jssor slider loading skin spin css*/
+        .jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-009-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /*jssor slider bullet skin 052 css*/
+        .jssorb052 .i {position:absolute;cursor:pointer;}
+        .jssorb052 .i .b {fill:#000;fill-opacity:0.3;}
+        .jssorb052 .i:hover .b {fill-opacity:.7;}
+        .jssorb052 .iav .b {fill-opacity: 1;}
+        .jssorb052 .i.idn {opacity:.3;}
+
+        /*jssor slider arrow skin 053 css*/
+        .jssora053 {display:block;position:absolute;cursor:pointer;}
+        .jssora053 .a {fill:none;stroke:#fff;stroke-width:640;stroke-miterlimit:10;}
+        .jssora053:hover {opacity:.8;}
+        .jssora053.jssora053dn {opacity:.5;}
+        .jssora053.jssora053ds {opacity:.3;pointer-events:none;}
+    </style>
+    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:680px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
+        </div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:680px;overflow:hidden;">
+            <div data-p="170.00">
+                <img data-u="King Room" src="images/room_1_1024.png" />
+                <h1>King Room</h1>
+                <p>高級感溢れる圧倒的な空間。全て赤で統一されたインテリアの中に豪華な1.6メートル以上あるシャンデリアの下で素敵なひと時を。</p>
+            </div>
+            <div data-p="170.00">
+                <img data-u="image" src="images/room_3_1024.png" />
+                <h1>Queen Room</h1>
+                <p>白を基調とした、芸術的なデザインを施したFantasticな個室。</p>
+            </div>
+            <div data-p="170.00">
+                <img data-u="image" src="images/room_2_1024.png" />
+                <h1>Jack Room</h1>
+                <p>温かみがある『木』と特別感ある『金』の色で引き立つ空間です。</p>
+            </div>
+
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb052" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+            <div data-u="prototype" class="i" style="width:16px;height:16px;">
+                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                </svg>
+            </div>
+        </div>
+        <!-- Arrow Navigator -->
+        <div data-u="arrowleft" class="jssora053" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+            </svg>
+        </div>
+        <div data-u="arrowright" class="jssora053" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+            </svg>
+        </div>
+    </div>
+    <script type="text/javascript">jssor_1_slider_init();</script>
+    <!-- #endregion Jssor Slider End -->
+
+            </div>
+
+                <div class="imageblock">
+                <img src="images/conte_4_1.png" style="max-width:100%;height:auto;">
+                </div>
+
+                <div class="imageblock" style="max-width:100%;height:auto;">
+                <div class="instagram">
+
+
+                    <h1>Circus Roppongi Instagram</h1>
+
+                    <div class="instawidget_pc">
+                   <!-- InstaWidget -->
+<a href="https://instawidget.net/v/user/circus_roppongi" id="link-31740d95b89402f90d708707b4f3353c50bc440037378b76a8d3bcc3eca80e28">@circus_roppongi</a>
+<script src="https://instawidget.net/js/instawidget.js?u=31740d95b89402f90d708707b4f3353c50bc440037378b76a8d3bcc3eca80e28&width=900px"></script>
+
+                        <!-- <iframe src="http://instaembedder.com/gallery-v2.php?width=230&cols=5&rows=4&margin=8&color=gray&likes=1&share_buttons=1&comments=1&date=1&link=1&frame=1&image_border=8&frame_color=transparent&cid=7890&" frameborder="0" width="100%" height="630" ></iframe>-->
+                        </div>
+
+                    <div class="instawidget_mobile">
+
+                        <!-- InstaWidget -->
+<a href="https://instawidget.net/v/user/circus_roppongi" id="link-93e3aa65ebcf1ae4bda065caaa68085cdc338d585e4c510d751aa9aa6c54c65c">@circus_roppongi</a>
+<script src="https://instawidget.net/js/instawidget.js?u=93e3aa65ebcf1ae4bda065caaa68085cdc338d585e4c510d751aa9aa6c54c65c&width=300px"></script>
+                        <!-- <iframe src="http://instaembedder.com/gallery-v2.php?width=95&cols=3&rows=3&margin=4&color=gray&likes=1&share_buttons=1&date=1&link=1&frame=1&image_border=8&frame_color=transparent&cid=7890&" frameborder="0" width="100%" height="330" ></iframe>
+                        </div>-->
+                </div>
+                </div>
+
+                </div>
+
+                <div class="imageblock">
+                    <div id="contactbig"><img src="images/contact.png" style="max-width:100%;height:auto;"></div>
+                    <div id="contactsmall"><img src="images/mobile_contact.png" style="max-width:100%;height:auto;"></div>
+                </div>
+
+                </div>
+
+            </div>
+
+        </body>
+</html>

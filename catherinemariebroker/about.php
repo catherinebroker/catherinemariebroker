@@ -51,13 +51,13 @@
 
         <div class="resumesWrapper">
           <div class="resume_link">
-            <a href="documents/Catherine_Marie_Broker_English_Resume.pdf">English Resume</a>
+            <a href="documents/Catherine_Marie_Broker_English_Resume.pdf" target="_blank">English Resume</a>
           </div>
             <div class="resume_link">
-              <a href="documents/Catherine_Marie_Broker_Japanese_Resume.pdf">Japanese Resume</a>
+              <a href="documents/Catherine_Marie_Broker_Japanese_Resume.pdf" target="_blank">Japanese Resume</a>
             </div>
             <div class="resume_link">
-              <a href="https://jp.linkedin.com/in/catherine-marie-broker"><i class="fab fa-linkedin"></i> Linked In</a>
+              <a href="https://jp.linkedin.com/in/catherine-marie-broker" target="_blank"><i class="fab fa-linkedin"></i> Linked In</a>
             </div>
         </div>
       </div>

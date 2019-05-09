@@ -88,7 +88,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   </head>
   <body>
-    
+
     <!--NAVIGATION -->
     <?php include("navigation.html") ?>
 
@@ -104,16 +104,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div id="contactForm">
           <p style="font-weight: 600; font-size: 1.2em"><?=$messageStatus;?></p>
 
-          <p style="margin-bottom: 10px;">Name:</p>
+          <p style="margin-bottom: 10px; text-transform: uppercase;">Name:</p>
             <p style="color: gray; margin: 0;"><span><?=$name;?></span><span class="error"><?=$nameErr;?></span></p>
 
-          <p style="margin-bottom: 10px;">Email Address:</p>
+          <p style="margin-bottom: 10px; text-transform: uppercase;">Email Address:</p>
             <p style="color: gray; margin: 0;"><span><?=$email;?></span><span class="error"><?=$emailErr;?></span></p>
 
-          <p style="margin-bottom: 10px;">Subject:</p>
+          <p style="margin-bottom: 10px; text-transform: uppercase;">Subject:</p>
           <p style="color: gray; margin: 0;"><span><?=$subject;?></span><span class="error"><?=$subjectErr;?></span></p>
 
-          <p style="margin-bottom: 10px;">Message:</p>
+          <p style="margin-bottom: 10px; text-transform: uppercase;">Message:</p>
             <p style="color: gray; margin: 0;"><span><?=$message;?></span><span class="error"><?=$messageErr;?></span></p>
         </div>
         <a href="contact.php" id="tryAgainButton"><?=$tryAgainButton?></a>

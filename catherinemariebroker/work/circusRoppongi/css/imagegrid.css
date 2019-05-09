@@ -1,0 +1,169 @@
+.item-e {
+    background-color: #222;
+}
+
+.item-c {
+    padding-top: 10%;
+    font-family: sans-serif;
+    background-color: white;
+    width: 80%;
+    margin: auto;
+}
+
+.title {
+    text-align: center;
+    padding-bottom: 2%;
+    padding-top:4%;
+}
+
+.item-d {
+    overflow: auto;
+    padding-bottom: 5%;
+}
+
+.imageleft {
+    float:left;
+    width: 55%;
+    padding-left: 10%;
+}
+
+.textright {
+    float: right;
+    padding-right: 5%;
+    width: 23%;
+}
+
+.textleft {
+    float:left;
+    text-align: left;
+    width: 23%;
+    padding-left: 10%;
+}
+
+.imageright {
+    float: right;
+    width: 55%;
+    padding-right: 10%;
+}
+.imageright1 {
+    float: right;
+    width: 25%;
+    margin-right: 10px;
+    padding-right: 20%;
+}
+
+.imageright img{
+    float: right;
+}
+
+.menuimage {
+    float: left;
+    width: 30%;
+    padding-left: 10%;
+}
+
+.menutext {
+    float: right;
+    padding-right: 20%;
+}
+
+.menutext h4 {
+    color: #A78E23;
+}
+
+.mobilepage {
+    display:none;
+}
+
+/*--------------------------MEDIA SCREEN LARGE--------------------------*/
+
+@media screen and (max-width: 1233px) {
+
+    .textright {
+       font-size: .8em;
+    }
+
+    .textleft {
+        font-size: .8em;
+    }
+
+    .menutext {
+        font-size: .8em;
+        padding-right: 5%;
+    }
+
+}
+
+/*--------------------------MEDIA SCREEN MEDIUM--------------------------*/
+
+@media screen and (max-width: 800px) {
+
+    .imageleft {
+        padding-left: 5%;
+    }
+
+    .textright {
+        width: 30%;
+    }
+
+    .textleft {
+        width: 30%;
+    }
+
+    .imageright {
+        padding-right: 5%;
+    }
+
+    .item-c {
+        width:100%;
+        padding-top: 23%;
+    }
+
+}
+
+/*--------------------------MOBILE LAST--------------------------*/
+
+@media screen and (max-width: 640px) {
+
+    .imageleft {
+       width: 100%;
+    }
+
+    .textright {
+       padding-top: 5%;
+        width: 85%;
+        font-size: 1em;
+    }
+
+    .textleft {
+        padding-top: 5%;
+        width: 85%;
+        font-size: 1em;
+    }
+
+    .imageright {
+        width: 100%;
+    }
+
+    .menuimage {
+        display:block;
+    }
+
+    .menutext {
+
+    }
+
+    .mobilepage {
+        display:block;
+        padding-top: 0%;
+    }
+
+    .title {
+        display: block;
+        padding-top: 10%;
+    }
+
+    .item-c {
+        width:100%;
+    }
+}

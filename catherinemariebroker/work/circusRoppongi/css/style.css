@@ -1,0 +1,402 @@
+body {
+    background-color: #222;
+    margin:auto;
+}
+
+container {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 20% auto;
+}
+/* ----------------------------NAV BAR START-------------------------- */
+
+.topnav {
+  overflow: hidden;
+  background-color: #FFFF;
+  margin:auto;
+  padding-left: 8%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  font-family: serif;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  vertical-align: bottom;
+}
+
+.topnav a:first-child {padding-right: 7%; padding-top: 1.5%;}
+
+.topnav a:not(:first-child) {padding-top:4%; padding-left: 6%;}
+
+.topnav .numberz{
+  height: 100px;
+  font-size: 15px;
+  margin-top: -60px;
+  margin-left: -15px;
+  line-height: 1.2;
+}
+.topnav .numberz p{
+  line-height: 1.8;
+  margin-bottom: -1px;
+  font-size: 27px;
+}
+.topnav a:hover {
+  color: #ddd;
+}
+
+
+.active {
+  background-color: white;
+  color: white;
+}
+
+.topnav .btn_menu {
+  display: none;
+}
+
+/* ----------------------------NAV BAR END-------------------------- */
+
+/* ----------------------------BBQ-------------------------- */
+.textleft1{
+  float: left;
+  margin-left: 100px;
+  text-align: center;
+}
+.textleft1 a{
+  text-decoration: none;
+  margin-left: 10px;
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: bold;
+}
+.textleft1 a:hover {
+  color: #ddd;
+}
+
+.phone-line{
+  display: none;
+}
+.imageright2{
+  display: none;
+}
+
+
+
+.item-b {
+    align-content: center;
+    text-align: center;
+    padding-top: 9%;
+    background-color: #222;
+}
+
+.video{
+ text-align: center;
+ margin-left: 50px;
+ margin-right: 50px;
+}
+
+.imageblock {
+   padding:0;
+   margin:0;
+}
+
+.slider h1 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    font-family: serif;
+    color: white;
+    letter-spacing: .1em;
+}
+
+.slider p {
+    position: absolute;
+    top: 73%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    font-family: sans-serif;
+    color: white;
+    letter-spacing: .1em;
+    font-size: 120%;
+    text-align: center;
+    width: 65%;
+    line-height: 200%;
+}
+
+.contactbig {
+    margin:auto;
+}
+
+.instagram {
+    background-color: white;
+    width: 82%;
+    margin: auto;
+    padding-bottom: 5%;
+}
+
+.instagram h1 {
+    margin: 0;
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+
+.instagram .iframe {
+    width: 100%;
+}
+
+.instawidget_pc {
+
+}
+
+.instawidget_mobile {
+    display: none;
+}
+
+#contactsmall {
+    display: none;
+}
+
+.mobilepage {
+    display:none;
+}
+
+    .menuimagepc {
+        display: block;
+
+    }
+
+    .menuimagemobile {
+        display: none;
+
+    }
+
+
+/*------------------------FOOTER START------------------------*/
+
+footer {
+    height: 80px;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 90%;
+}
+
+footer p{
+    margin: 0;
+    padding-top: 3%;
+}
+
+/*--------------------------FOOTER END--------------------------*/
+
+
+/*--------------------------AWKWARD SIZE--------------------------*/
+@media screen and (max-width: 1200px) {
+      .video video{
+    width: 100%;
+          height:auto;
+          padding-top: 0%;
+          margin: 0;
+}
+
+    .video{
+        margin:35;
+        max-width: 100%;
+    }
+
+    .instagram {
+    width: 88%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+      .video video{
+    width: 100%;
+          height:auto;
+          padding-top: 15%;
+          margin: 0;
+}
+
+    .video{
+        margin:0;
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+
+/*--------------------------MOBILE LAST--------------------------*/
+
+@media screen and (max-width: 640px) {
+    body {
+        margin:auto;
+        background-color: white;
+    }
+
+    .item-a {
+        padding-right: 13%;
+    }
+
+    .topnav a:first-child {
+        padding-right: 0%;
+        padding-left: 0%;
+        height: 10%;
+    }
+
+      .video video{
+        width: 100%;
+          height:auto;
+          padding-top: 0%;
+          margin: 0;
+}
+
+    .video{
+        margin:0;
+        max-width: 100%;
+    }
+
+    .item-b {
+        align-content: center;
+        text-align: center;
+        padding-top: 27%;
+    }
+
+    .item-c {
+        padding-top: 0%;
+    }
+
+    #contactbig {
+        display:none;
+    }
+
+    #contactsmall {
+        display:block;
+}
+
+    .mobilepage {
+        display:block;
+        padding-top: 0%;
+    }
+
+    .title {
+        display: block;
+    }
+
+    .concept {
+        display:none;
+    }
+
+    footer p{
+        margin: 0;
+        padding-top: 7%;
+    }
+
+  .topnav a:not(:first-child) {display: none;}
+  .topnav .btn_menu {
+    float: right;
+    display: block;
+      padding-right: 9%;
+      padding-top: 7%;
+  }
+
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .btn_menu {
+    position: absolute;
+    right: -51px;
+    top: 2px;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+
+    .instagram {
+        width: 100%;
+        padding-bottom: 10%;
+    }
+
+    .instagram h1 {
+        font-size: 100%;
+    }
+
+ .instawidget_mobile {
+    display: block;
+    }
+
+   .instawidget_pc {
+    display:none;
+    }
+
+    .menuimagepc {
+        display: none;
+    }
+
+    .menuimagemobiletext {
+        padding-left: 20%;
+    }
+
+    .menuimagemobile {
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+    .textleft1{
+      margin-left: 30px;
+    }
+
+.textleft1 a{
+  text-decoration: none;
+  margin-left: 20px;
+  margin-right: 0px;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.imageright1 img {
+display: none;
+}
+.imageright2{
+  display: block;
+  padding: 5px;
+  margin-left: 90px;
+}
+.imageright2 img{
+  margin-top: 20px;
+}
+.title img{
+  margin-left: -30px;
+}
+.topnav .numberz{
+  height: 100px;
+  font-size: 15px;
+  margin-top: -35px;
+  margin-left: 2px;
+  line-height: 1.2;
+}
+.bbqslider{
+  margin-left: 10px;
+}
+
+}

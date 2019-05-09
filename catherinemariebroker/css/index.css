@@ -105,12 +105,14 @@ body {
 }
 
 .work_detail {
-  padding: 60px 15px 15px 15px;
+  padding: 60px 15px 15px 10px;
 }
 
 .work_detail img {
   display: block;
   margin: auto;
+  max-width: 233px;
+  height: auto;
   -webkit-filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, 0.5));
   filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, 0.5));
   opacity: 1;

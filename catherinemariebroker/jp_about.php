@@ -45,19 +45,19 @@
         </div>
 
         <article>
-          <h4>自己紹介: ブローカ・キャサリン</h4>
-          <p>Building an interactive, compelling website is a necessary component to increase business and sales in this day and age. Each day technology is improving, and multiple devices that can access the web are being created. A strong web presence is more vital now than ever before. I am dedicated to creating websites that help companies connect with their clients and consumers.</p>
+          <h4>ブローカ・キャサリン</h4>
+          <p>ビジネスとセールスが融合している現代では、インパクトのあるWEBサイトが必須です。日々テクノロジーは進化し、WEBサイトにアクセスできる新しい機器が作られています。企業の方々はよりもいいが必要です。企業とお客さんを繋げるためのWEBサイトを作成します。</p>
         </article>
 
         <div class="resumesWrapper">
           <div class="resume_link">
-            <a href="documents/Catherine_Marie_Broker_English_Resume.pdf">英語履歴書</a>
+            <a href="documents/Catherine_Marie_Broker_English_Resume.pdf" target="_blank">英語履歴書</a>
           </div>
             <div class="resume_link">
-              <a href="documents/Catherine_Marie_Broker_Japanese_Resume.pdf">日本語履歴書</a>
+              <a href="documents/Catherine_Marie_Broker_Japanese_Resume.pdf" target="_blank">日本語履歴書</a>
             </div>
             <div class="resume_link">
-              <a href="https://jp.linkedin.com/in/catherine-marie-broker"><i class="fab fa-linkedin"></i> Linked In</a>
+              <a href="https://jp.linkedin.com/in/catherine-marie-broker" target="_blank"><i class="fab fa-linkedin"></i> Linked In</a>
             </div>
         </div>
       </div>

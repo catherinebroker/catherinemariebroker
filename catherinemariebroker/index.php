@@ -78,21 +78,21 @@
 
       <div class="details_wrapper">
         <div class="details_box work_detail" id="work_detail">
-          <img src="images/img_blog.png"><br>
+          <a href="work/circusRoppongi/index.html" target="_blank"><img src="images/circus.png" style="width: 233px;"></a><br>
           <h2>Circus Roppongi</h2>
-          <a href="#"><h3>see more</h3></a>
+          <a href="work/circusRoppongi/index.html" target="_blank"><h3>see more</h3></a>
         </div>
 
         <div class="details_box work_detail" id="work_detail">
-          <img src="images/img_blog.png"><br>
+          <a href="work/ezeeBuy/index.html" target="_blank"><img src="images/ezeebuy.png" style="width: 233px;"></a><br>
           <h2>EZEE Buy</h2>
-          <a href="#"><h3>see more</h3></a>
+          <a href="work/ezeeBuy/index.html" target="_blank"><h3>see more</h3></a>
         </div>
 
         <div class="details_box work_detail" id="work_detail">
-          <img src="images/img_blog.png"><br>
+          <a href="#" target="_blank"><img src="images/img_blog.png"></a><br>
           <h2>GFTD WORKS</h2>
-          <a href="#"><h3>see more</h3></a>
+          <a href="#" target="_blank"><h3>see more</h3></a>
           </div>
         </div>
     </section>

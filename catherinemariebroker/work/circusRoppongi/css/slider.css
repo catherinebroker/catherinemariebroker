@@ -1,0 +1,193 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+ applet, object, iframe,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+.topnav a {
+  float: left;
+  margin-top: -10px;
+  margin-bottom: -6.5px;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  vertical-align: bottom;
+}
+.topnav a:first-child {padding-right: 7%; padding-top: 2.1%;}
+
+html {
+  line-height: 2;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+body {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  padding: 1em 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+  padding-bottom: .5em;
+}
+
+
+#slider {
+  width: 500px;
+  height: 300px;
+  margin: 0 auto 10px;
+  overflow: hidden;
+  position: relative;
+}
+#slider ul {
+  overflow: hidden;
+}
+#slider ul li {
+  font-size: 1.5em;
+  color: #fff;
+  text-align: center;
+  float: left;
+  width: 500px;
+  height: 300px;
+  line-height: 300px;
+}
+#slider ul li img{
+  width: 100%;
+}
+
+#slider a#sliderNext {
+  right: 0;
+}
+#slider a:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+}
+
+#pager {
+  text-align: center;
+}
+#pager a {
+  display: inline;
+  padding: 1px;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: ;
+  *display: inline;
+  cursor: pointer;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+#pager a:hover, #pager a.active {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+}
+@media screen and (max-width: 640px) {
+    body {
+        margin:auto;
+        background-color: white;
+    }
+    #slider {
+      width: 350px;
+      height: 300px;
+      overflow: hidden;
+      position: relative;
+      margin-bottom: 0px;
+    }
+    #slider ul li{
+      width: 500px;
+      height: 300px;
+      margin-bottom: 0px;
+    }
+
+
+    #slider ul li img{
+      width: 70%;
+      height: 70%;
+      float: left;
+      margin-left: 2px;
+      margin-top: 81px;
+
+    }
+
+
+.imageleft{
+  padding-left: 0px;
+  margin-left: -25px;
+}
+
+.w3-center{
+  margin-right: 15px;
+  margin-left: -5px;
+  width: 370px;
+}
+.w3-center button{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#pager a {
+  display: inline;
+  padding: 1px;
+  padding-left: 4px;
+  padding-right: 4px;
+
+}

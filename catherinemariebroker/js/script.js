@@ -69,6 +69,27 @@ $(document).ready(function() {
   //   });
 
 
+  // function scrollFade(windowSize) {
+  //   if (windowSize.matches) { // If media query matches
+  //     $(window).scroll(function(){
+  //         $("#section_top").css("opacity", 1 - $(window).scrollTop() / 350);
+  //       });
+  //
+  //     $(window).scroll(function(){
+  //         $("#section_services").css("opacity", 1.5 - $(window).scrollTop() / 1000);
+  //       });
+  //
+  //     $(window).scroll(function(){
+  //         $("#section_work").css("opacity", 1.5 - $(window).scrollTop() / 2500);
+  //       });
+  //   }
+  // }
+  //
+  // var windowSize = window.matchMedia("(min-width: 740px)")
+  // scrollFade(windowSize) // Call listener function at run time
+  // windowSize.addListener(scrollFade) // Attach listener function on state changes
+
+
 
 /************ ABOUT PAGE ***************/
 //Animate Skills Bars after scrolling */
@@ -103,3 +124,16 @@ $(window).scroll(function(){
       y.className = "navBar_mobile";
     }
   }
+
+  /* Fade on Scroll Effect, only when the window is >740px */
+  // function scrollFade(windowSize) {
+  //   if (windowSize.matches) { // If media query matches
+  //     document.body.style.backgroundColor = "yellow";
+  //   } else {
+  //    document.body.style.backgroundColor = "pink";
+  //   }
+  // }
+  //
+  // var windowSize = window.matchMedia("(max-width: 740px)")
+  // scrollFade(windowSize) // Call listener function at run time
+  // windowSize.addListener(scrollFade) // Attach listener function on state changes

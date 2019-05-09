@@ -1,0 +1,72 @@
+<!doctype html>
+    <html lang="en-US">
+        <head>
+            <meta charset="UTF-8">
+
+            <title>Circus Roppongi</title>
+
+            <!-- Main Stylesheet-->
+            <link rel= "stylesheet" type= "text/css" href= "css/style.css">
+
+            <!--Helps size change across multiple screen sizes-->
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <link rel="shortcut icon" href="images/favicon.png"/>
+
+        </head>
+
+       <body>
+
+        <div class="container">
+
+            <div class="item-a">
+                <!-- Navbar Start -->
+
+                <div class="topnav" id="myTopnav">
+                    <a href="#home" class="active"><img src="images/logo.png"></a>
+                    <a href="index.html">Top</a>
+                    <a href="concept.html">Concept</a>
+                    <a href="rooms.html">Rooms</a>
+                    <a href="bbq.html">BBQ</a>
+
+                    <a href="tel:080-9020-9245" class="numberz"><p>080-9020-9245</p>電話受付 24時間対応</a>
+                    <div class="btn_menu">
+                      <img src="images/btn_menu.png" style="max-width:60%;height:auto;" href="javascript:void(0);" onclick="myFunction()">
+                    </div>
+                    </div>
+
+                    <script>
+                    function myFunction() {
+                        var x = document.getElementById("myTopnav");
+                        if (x.className === "topnav") {
+                            x.className += " responsive";
+                        } else {
+                            x.className = "topnav";
+                        }
+                    }
+                    </script>
+                <!-- Navbar End -->
+
+            </div>
+
+
+            <div class="item-b">
+                <div class="concept">
+                <img src="images/concept.png" style="max-width:100%;height:auto;">
+
+                </div>
+
+                <div class="mobilepage">
+                <img src="images/mobile_concept.png" style="max-width:100%;height:auto;">
+                </div>
+
+            <footer>
+                <p>Copyright Circus Roppongi. All rights reserved.</p>
+                </footer>
+            </div>
+
+            </div>
+
+        </body>
+
+</html>
