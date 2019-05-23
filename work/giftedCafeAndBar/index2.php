@@ -38,9 +38,9 @@
 
         <div class="views">
 
-          <a href="#" onclick="backgroundChange1()"><img class="shop_thumbnail" src="img/360bg.jpg" alt=""></a>
-          <a href="#" onclick="backgroundChange2()"><img class="shop_thumbnail" src="img/360bg.png" alt=""></a>
-          <br>
+          <a href="#" onclick="backgroundChange1()"><img class="shop_thumbnail" src="img/shop_thumbnail1.png" alt=""></a>
+          <a href="#" onclick="backgroundChange2()"><img class="shop_thumbnail" src="img/shop_thumbnail2.png" alt=""></a>
+          <a href="#" onclick="backgroundChange3()"><img class="shop_thumbnail" src="img/shop_thumbnail2.png" alt=""></a><br>
 
           <img class="thumb360" src="img/360_icon.png" alt="">
         </div>

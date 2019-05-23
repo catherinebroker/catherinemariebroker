@@ -12,6 +12,10 @@
   grid-row: 1;
 }
 
+table tr td a {
+  color: #000;
+}
+
 .contactDetails {
   grid-column: 1 / 2;
   grid-row: 2;

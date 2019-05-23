@@ -1,11 +1,9 @@
-body {
-  margin: 0;
+html, body {
   padding: 0;
-}
-
-html {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
 }
 
 #top_bg {
@@ -74,8 +72,12 @@ html {
   width: auto;
 }
 
-.shop_thumbnail {
+img.shop_thumbnail {
   margin: 0px 12px 10px 0;
+  width: 97px;
+  height: 54px;
+  border: 1px solid #FFF;
+  border-radius: 5px;
 }
 
 .views a {
