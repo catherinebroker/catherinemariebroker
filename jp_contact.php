@@ -43,16 +43,12 @@
             <p>件名： *<br>
               <input type="text" placeholder="メッセージの件名を書いてください。" name="subject" value="" maxlength="20"></p>
             <p>メッセージ：　＊<br>
-              <input type="text" placeholder="メッセージを書いてください。" name="message" value="" maxlength="1000"></input>
+              <input type="text" placeholder="メッセージを書いてください。" name="message" value="" maxlength="1000">
             </p>
             <p><input type="submit" value="送信"></p>
           </form>
         </div>
       </div>
-    </div>
-
-    </div>
-  </div>
 
     <!-- Footer -->
     <?php include("jp_footer.html") ?>

@@ -43,16 +43,12 @@
             <p>Subject: *<br>
               <input type="text" placeholder="Write the subject of your message here." name="subject" value="" maxlength="20"></p>
             <p>Message: *<br>
-              <input type="text" placeholder="Write your message here." name="message" value="" maxlength="1000"></input>
+              <input type="text" placeholder="Write your message here." name="message" value="" maxlength="1000">
             </p>
             <p><input type="submit" value="Submit"></p>
           </form>
         </div>
       </div>
-    </div>
-
-    </div>
-  </div>
 
     <!-- Footer -->
     <?php include("footer.html") ?>

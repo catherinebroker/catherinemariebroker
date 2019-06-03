@@ -91,7 +91,7 @@
 
         <div class="details_box work_detail" id="work_detail">
           <a href="work/giftedCafeAndBar/index.php" target="_blank"><img src="images/giftedcafe.png" style="width: 233px;"></a><br>
-          <h2>GFTD CAFE & BAR</h2>
+          <h2>GFTD CAFE &amp; BAR</h2>
           <a href="#" target="_blank"><h3>(開発途中)</h3></a>
           </div>
         </div>
