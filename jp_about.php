@@ -5,6 +5,8 @@
 
     <title>Code Queen: Catherine Broker</title>
 
+		<meta name="description" content="I am a Tokyo based web developer expanding the web presence of businesses and organizations, one line of code at a time!">
+
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/about.css">
@@ -31,7 +33,7 @@
     <div id="section_about">
       <div class="about_banner">
         <div class="banner">
-          <h1>About</h1>
+          <h2>About</h2>
         </div>
     </div>
 
@@ -45,7 +47,7 @@
         </div>
 
         <article>
-          <h4>ブローカ・キャサリン</h4>
+          <h1>ブローカ・キャサリン</h1>
           <p>ビジネスとセールスが融合している現代では、インパクトのあるWEBサイトが必須です。日々テクノロジーは進化し、WEBサイトにアクセスできる新しい機器が作られています。企業の方々はよりもいいが必要です。企業とお客さんを繋げるためのWEBサイトを作成します。</p>
         </article>
 
@@ -64,7 +66,7 @@
 
       <div class="skills_banner">
         <div class="banner">
-          <h1>Skills</h1>
+          <h2>Skills</h2>
         </div>
       </div>
 

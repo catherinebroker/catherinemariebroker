@@ -1,0 +1,356 @@
+<!doctype html>
+    <html lang="en-US">
+        <head>
+            <meta charset="UTF-8">
+
+            <title>Circus Roppongi</title>
+
+            <!-- Main Stylesheet-->
+            <link rel= "stylesheet" type= "text/css" href= "css/style.css">
+            <link rel= "stylesheet" type= "text/css" href= "css/slider.css">
+            <!-- Rooms/BBQ Stylesheet -->
+            <link rel="stylesheet" type="text/css" href="css/imagegrid.css">
+
+            <!-- BBQ Slider -->
+            <link rel="stylesheet" href="css/bbqslider.css">
+            <link rel="stylesheet" href="css/slider-pro.min.css"/>
+
+            <!--Helps size change across multiple screen sizes-->
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+            <link rel="shortcut icon" href="images/favicon.png"/>
+
+        </head>
+
+        <body>
+
+            <div class="container">
+
+            <div class="item-a">
+                <!-- Navbar Start -->
+                <div class="topnav" id="myTopnav">
+                    <a href="#home" class="active"><img src="images/logo.png"></a>
+                    <a href="index.html">Top</a>
+                    <a href="concept.html">Concept</a>
+                    <a href="rooms.html">Rooms</a>
+                    <a href="bbq.html">BBQ</a>
+
+                    <a href="tel:080-9020-9245" class="numberz"><p>080-9020-9245</p>電話受付 24時間対応</a>
+                    <div class="btn_menu">
+                      <img src="images/btn_menu.png" style="max-width:60%;height:auto;" href="javascript:void(0);" onclick="myFunction()">
+                    </div>
+                    </div>
+
+
+
+
+                    <script>
+                    function myFunction() {
+                        var x = document.getElementById("myTopnav");
+                        if (x.className === "topnav") {
+                            x.className += " responsive";
+                        } else {
+                            x.className = "topnav";
+                        }
+                    }
+                    </script>
+                    </div>
+                <!-- Navbar End -->
+
+            </div>
+
+            <div class="item-e">
+            <div class="item-c">
+              <div class="title">
+              <img src="images/top_title_bbq.png">
+              </div>
+              <div class="item-d">
+                  <div class="imageright1">
+                  <img src="images/line.PNG" style="max-width:90%;height:auto;">
+                    </div>
+
+
+                  <div class="textleft1">
+                  <a href="tel:080-9020-9245" class="numberz">
+                    <i class="fa fa-phone" style="font-size:45px; margin-right: 10px"></i>080-9020-9245</a>
+                    </div>
+                    <div class="imageright2">
+                    <img src="images/line.PNG" style="max-width:50%;height:auto;">
+                      </div>
+                  </div>
+
+            <div class="item-d">
+                <div class="imageleft">
+                    <div class="bbqslider">
+<div class="w3-content" style="max-width:100%">
+  <img class="mySlides" src="images/img_bbq_1.png" style="max-width:100%">
+  <img class="mySlides" src="images/img_bbq_2.png" style="width:100%">
+  <img class="mySlides" src="images/img_bbq_3.png" style="width:100%">
+  <img class="mySlides" src="images/img_bbq_4.png" style="width:100%">
+  <img class="mySlides" src="images/img_bbq_5.png" style="width:100%">
+</div>
+
+<div class="w3-center">
+
+  <button class="w3-button demo" onclick="currentDiv(1)"><img src="images/img_bbq_1.png" style="max-width:100px"></button>
+  <button class="w3-button demo" onclick="currentDiv(2)"><img src="images/img_bbq_2.png" style="max-width:100px"></button>
+  <button class="w3-button demo" onclick="currentDiv(3)"><img src="images/img_bbq_3.png" style="max-width:100px"></button>
+  <button class="w3-button demo" onclick="currentDiv(4)"><img src="images/img_bbq_4.png" style="max-width:100px"></button>
+  <button class="w3-button demo" onclick="currentDiv(5)"><img src="images/img_bbq_5.png" style="max-width:100px"></button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-red";
+}
+</script>
+
+                </div>
+                </div>
+
+                <div class="textright">
+                    <img src="images/info_bbq_title_1.png" style="max-width:100%;height:auto;">
+                    <p>六本木の隠れ家的、会員制バーで優雅なひと時を過ごしませんか。六本木にいながら手ぶらでBBQをお愉しみ頂けます。<br><br>
+                    金額 ￥8,000  (税込) ３時間制（延長可）<br>
+                  「シャンパン付き￥10,000 (税込)」<br>
+                    20名様までご利用可能<br>
+                    飲み放題付<br>
+                    完全予約制<br>
+                    当日予約不可<br>
+                    ご予約は、お電話かLINEにて承ります。</p>
+                </div>
+            </div>
+          </div>
+
+          <div class="item-e">
+          <div class="item-c">
+
+          <div class="item-d">
+              <div class="imageleft">
+                  <div class="bbqslider">
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<div id="slider">
+	<ul>
+		<li><img src="images/img_bbq_menu_2.png"></li>
+		<li><img src="images/img_bbq_menu_1.png"></li>
+		<li><img src="images/img_bbq_menu_3.png"></li>
+		<li><img src="images/img_bbq_menu_4.png"></li>
+    <li><img src="images/img_bbq_menu_5.png"></li>
+	</ul>
+
+</div>
+<script type="text/javascript">
+$(function(){
+var slider = $('#slider');
+var sliderWrap = $('#slider ul');
+var sliderImg = $('#slider ul li');
+var prevBtm = $('#sliderPrev');
+var nextBtm = $('#sliderNext');
+var length = sliderImg.length;
+var width = sliderImg.width();
+var thumbWidth = width/length;
+
+sliderWrap.width(width*(length+2));
+
+//Set up
+slider.after('<div id="' + 'pager' + '"></div>');
+var dataVal = 1;
+sliderImg.each(
+  function(){
+    $(this).attr('data-img',dataVal);
+    $('#pager').append('<a data-img="' + dataVal + '"><img src=' + $('img', this).attr('src') + ' width=' + thumbWidth + '></a>');
+  dataVal++;
+});
+
+//Copy 2 images and put them in the front and at the end
+$('#slider ul li:first-child').clone().appendTo('#slider ul');
+$('#slider ul li:nth-child(' + length + ')').clone().prependTo('#slider ul');
+
+sliderWrap.css('margin-left', - width);
+$('#slider ul li:nth-child(2)').addClass('active');
+
+var imgPos = pagerPos = $('#slider ul li.active').attr('data-img');
+$('#pager a:nth-child(' +pagerPos+ ')').addClass('active');
+
+
+//Click on Pager
+$('#pager a').on('click', function() {
+  pagerPos = $(this).attr('data-img');
+  $('#pager a.active').removeClass('active');
+  $(this).addClass('active');
+
+  if (pagerPos > imgPos) {
+    var movePx = width * (pagerPos - imgPos);
+    moveNext(movePx);
+  }
+
+  if (pagerPos < imgPos) {
+    var movePx = width * (imgPos - pagerPos);
+    movePrev(movePx);
+  }
+  return false;
+});
+
+//Click on Buttons
+nextBtm.on('click', function(){
+  moveNext(width);
+  return false;
+});
+
+prevBtm.on('click', function(){
+  movePrev(width);
+  return false;
+});
+
+//Function for pager active motion
+function pagerActive() {
+  pagerPos = imgPos;
+  $('#pager a.active').removeClass('active');
+  $('#pager a[data-img="' + pagerPos + '"]').addClass('active');
+}
+
+//Function for moveNext Button
+function moveNext(moveWidth) {
+  sliderWrap.animate({
+      'margin-left': '-=' + moveWidth
+      }, 500, function() {
+        if (imgPos==length) {
+          imgPos=1;
+          sliderWrap.css('margin-left', - width);
+        }
+        else if (pagerPos > imgPos) {
+          imgPos = pagerPos;
+        }
+        else {
+          imgPos++;
+        }
+        pagerActive();
+    });
+}
+
+//Function for movePrev Button
+function movePrev(moveWidth) {
+  sliderWrap.animate({
+      'margin-left': '+=' + moveWidth
+      }, 500, function() {
+        if (imgPos==1) {
+          imgPos=length;
+          sliderWrap.css('margin-left', -(width*length));
+        }
+        else if (pagerPos < imgPos) {
+          imgPos = pagerPos;
+        }
+        else {
+          imgPos--;
+        }
+        pagerActive();
+    });
+}
+
+});
+</script>
+              </div>
+              </div>
+
+              <div class="textright">
+                <div class="title">
+                <img src="images/info_menu_title_1.png">
+                </div>
+                <div class="menutext">
+                    <h4>▶︎肉</h4>
+<p>スペイン産イベリコ豚リブロースのサムギョプサル<br>
+ハンガリー産マンガリッツァ豚のサムギョプサル<br>
+国産牛の特製カルビ</p>
+
+<h4>▶︎海鮮</h4>
+<p>大海老の串焼き<br>
+    殻付きホタテのバター醤油焼き</p>
+
+<h4>▶︎野菜</h4>
+<p>野菜串焼き<br>
+玉ねぎ<br>
+長ネギ<br>
+ピーマン<br>
+トウモロコシ<br>
+しいたけ<br>
+アスパラ</p>
+
+<h4>▶︎その他</h4>
+<p>北海道じゃがバター<br>
+きのこバターホイル焼き</p>
+<br>
+                    ■飲み放題メニュー
+                    <h4>▶︎ALCOHOL</h4>
+<p>焼酎類<br>
+二階堂<br>
+鏡月</p>
+
+<p>梅酒</p>
+
+<p>レモンサワー<br>
+グレープフルーツサワー<br>
+その他サワー系 各種</p>
+
+<p>ハイボール<br>
+ワイン赤・白</p>
+
+<h4>▶︎SOFT DRINK</h4>
+<p>オレンジジュース<br>
+グレープフルーツジュース<br>
+緑茶<br>
+烏龍茶<br>
+ジャスミン茶<br>
+麦茶</p>
+                </div>
+                </div>
+              </div>
+              <div class="item-d">
+                  <div class="imageright1">
+                  <img src="images/line.PNG" style="max-width:90%;height:auto;">
+                    </div>
+                  <div class="textleft1">
+                  <a href="tel:080-9020-9245" class="numberz">
+                    <i class="fa fa-phone" style="font-size:45px; margin-right: 10px"></i>080-9020-9245</a>
+                    </div>
+                  </div>
+                  <div class="imageright2">
+                  <img src="images/line.PNG" style="max-width:50%;height:auto;">
+                    </div>
+          </div>
+
+
+             <footer>
+                <p>Copyright Circus Roppongi. All rights reserved.</p>
+            </footer>
+
+            </div>
+            <script src="js/jquery-1.12.0.min.js"></script>
+        <script src="js/jquery.sliderPro.min.js"></script>
+
+        </body>
+
+</html>

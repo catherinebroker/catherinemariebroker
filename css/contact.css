@@ -9,7 +9,10 @@ body {
   width: 1000px;
   margin: 0 auto;
   height: 100vh;
-  text-align: center;
+}
+
+#section_contact #contactForm {
+  margin: 50px 0 50px 0;
 }
 
 #section_contact #contactForm form {
@@ -17,15 +20,15 @@ body {
   width: 700px;
 }
 
-#section_contact #contactForm {
-  margin: 50px 0 50px 0;
+#section_contact #contactForm .client_information_input {
+	margin-bottom: 30px;
 }
 
-#section_contact form p {
-  margin: 30px auto;
+#section_contact form label {
   color: #f71c6d;
   text-align: left;
   text-transform: uppercase;
+	font-weight: 600;
 }
 
 #contactForm input {
@@ -34,6 +37,7 @@ body {
   background-color: rgba(0,0,0,0);
   height: 30px;
   padding: 5px 0px 7px 0px;
+	margin-bottom: 10px;
 }
 
 #contactForm input[type=text], #contactForm input[type=email]{
@@ -48,9 +52,8 @@ body {
 
 #section_contact input[type=submit]{
   margin: 0 auto;
-  color: gray;
-  border: 1px solid gray;
-  background-color: #FFF;
+  color: #f71c6d;
+  border: 1px solid #f71c6d;
   font-size: 1.1em;
   font-weight: lighter;
   font-family: serif;
@@ -62,16 +65,43 @@ body {
 }
 
 #section_contact input[type=submit]:hover {
-  background-color: #FFF;
+  background-color: #f71c6d;
+  color: #FFF;
+  cursor: pointer;
+}
+
+#section_contact input[type=button]{
+	margin: 0 auto;
   color: #f71c6d;
-  border: 1px solid #f71c6d;
+  border: none;
+  font-size: 1.1em;
+  font-weight: lighter;
+  font-family: serif;
+  transition: .5s ease;
+  /* width: 100px; */
+	/* padding: 0 10px; */
+  height: 50px;
+  vertical-align: top;
+  text-transform: uppercase;
+
+}
+
+#section_contact input[type=button]:hover {
+  text-decoration: underline;
   cursor: pointer;
 }
 
 #section_contact p {
   margin: 30px auto;
-  color: #f71c6d;
+  color: gray;
   text-align: left;
+}
+
+#section_contact p.error {
+  margin: 0;
+  color: #222;
+  text-align: left;
+	font-weight: 600;
 }
 
 #contactResults {
@@ -197,7 +227,12 @@ body {
 }
 
 
-
+/* Media Query: Smart Phone */
+@media screen and (max-width: 740px) {
+	#section_contact input[type=submit]{
+		margin: 0 auto;
+	}
+}
 
 
 

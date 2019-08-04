@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
-    <title>Code Queen: Catherine Broker</title>
+    <title>Code Queen: About Catherine Broker</title>
+
+		<meta name="description" content="I am a Tokyo based web developer expanding the web presence of businesses and organizations, one line of code at a time!">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/style.css">
@@ -31,12 +33,12 @@
     <div id="section_about">
       <div class="about_banner">
         <div class="banner">
-          <h1>About</h1>
+          <h2>About</h2>
         </div>
     </div>
 
       <div id="profile_pic">
-        <img src="images/profilepic_square.png" alt="A photo of the Queen herself.">
+        <img src="images/profilepic_square.png" alt="A photo of the Queen, Catherine Broker.">
       </div>
 
       <div id="about_introduction">
@@ -45,7 +47,7 @@
         </div>
 
         <article>
-          <h4>About Me: Catherine Broker</h4>
+          <h1>About Me: Catherine Broker</h1>
           <p>Building an interactive, compelling website is a necessary component to increase business and sales in this day and age. Each day technology is improving, and multiple devices that can access the web are being created. A strong web presence is more vital now than ever before. I am dedicated to creating websites that help companies connect with their clients and consumers.</p>
         </article>
 
@@ -64,7 +66,7 @@
 
       <div class="skills_banner">
         <div class="banner">
-          <h1>Skills</h1>
+          <h2>Skills</h2>
         </div>
       </div>
 

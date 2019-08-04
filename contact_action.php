@@ -2,15 +2,18 @@
 // define variables and set to empty values
 $to = "catherinemariebroker@gmail.com";
 $name = $email = $subject = $message = "";
-$subjectErr = $messageErr = $nameErr = $emailErr = $messageStatus = $tryAgainButton = "";
+$nameErr = $emailErr = $subjectErr = $messageErr =  $messageStatus = "";
 
 //Protect input values from malicious code
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $name = test_input($_POST["name"]);
   $email = test_input($_POST["email"]);
+	$mailCheck = test_input($_POST["mailCheck"]);
   $subject = test_input($_POST["subject"]);
   $message = test_input($_POST["message"]);
+	$confirmed = $_POST["confirmed"];
 }
+
 function test_input($data) {
   $data = trim($data);
   $data = stripslashes($data);
@@ -28,12 +31,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   if (empty($_POST["email"])) {
     $emailErr = "* An email address is required.";
-  } else {
+  } else if ($email != $mailCheck){
+		$emailErr = "Email addresses must match.";
+	} else if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+		$emailErr = "* Invalid email format";
+		// check if e-mail address is well-formed
+	} else {
     $email = test_input($_POST["email"]);
-    // check if e-mail address is well-formed
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-      $emailErr = "* Invalid email format";
-    }
   }
 
   if (empty($_POST["subject"])) {
@@ -48,18 +52,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = test_input($_POST["message"]);
   }
 
-  // Check input values and send if everything is cool.
-  if (empty($_POST["name"]) || empty($_POST["email"]) || !filter_var($email, FILTER_VALIDATE_EMAIL) || empty($_POST["subject"]) || empty($_POST["message"])) {
-    $messageStatus = "Please check that every box has been completed and that the email address entered is valid.";
-    $tryAgainButton = "Click to try again";
+	$page_flag = 0;
 
+  // Check input values and send if everything is cool.
+  if (empty($name) || empty($email) || !filter_var($email) || empty($subject) || empty($message) {
+    $messageStatus = "Please check that every box has been completed, the email addresses match, and that the email address entered is valid.";
   } else {
-    $messageStatus = "Thank you for your message! The following information has been sent!";
-    mail($to,$subject,$message,$email);
-    $tryAgainButton = "Send another message";
+    $page_flag = 1;
   }
 
-//How to merge input page and displayed results on the same page but under different conditions?
+	// mail send
+	if($page_flag == '1' && $confirmed == 'true') {
+		mail($to, $subject, $message, $email);
+		$page_flag = 2;
  }
  ?>
 
@@ -96,7 +101,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <!-- Contact Form -->
       <div id="section_contact">
         <div class="banner">
-          <h1>Contact</h1>
+          <h2>Contact</h2>
         </div>
 
         <div id="contactResults">

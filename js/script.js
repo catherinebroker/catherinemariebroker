@@ -3,10 +3,12 @@ $(document).ready(function() {
 /************ ALL PAGES ***************/
 
   /* Add smooth scrolling to all links*/
-  $("a").on('click', function(event) {
+  $('a.scrollFadeLink').on('click', function(event) {
+
+		var url = location.pathname;
 
   // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
+    if (this.hash !== "" && (url === "/index.php" || url === "/jp_index.php")) {
       // Prevent default anchor click behavior
       event.preventDefault();
 
@@ -59,32 +61,32 @@ $(document).ready(function() {
   // $(window).scroll(function(){
   //     $("#section_top").css("opacity", 1 - $(window).scrollTop() / 350);
   //   });
-  //
+	//
   // $(window).scroll(function(){
   //     $("#section_services").css("opacity", 1.5 - $(window).scrollTop() / 1000);
   //   });
-  //
+	//
   // $(window).scroll(function(){
   //     $("#section_work").css("opacity", 1.5 - $(window).scrollTop() / 2500);
   //   });
-
-
+	//
+	//
   // function scrollFade(windowSize) {
   //   if (windowSize.matches) { // If media query matches
   //     $(window).scroll(function(){
   //         $("#section_top").css("opacity", 1 - $(window).scrollTop() / 350);
   //       });
-  //
+	//
   //     $(window).scroll(function(){
   //         $("#section_services").css("opacity", 1.5 - $(window).scrollTop() / 1000);
   //       });
-  //
+	//
   //     $(window).scroll(function(){
   //         $("#section_work").css("opacity", 1.5 - $(window).scrollTop() / 2500);
   //       });
   //   }
   // }
-  //
+	//
   // var windowSize = window.matchMedia("(min-width: 740px)")
   // scrollFade(windowSize) // Call listener function at run time
   // windowSize.addListener(scrollFade) // Attach listener function on state changes
@@ -133,7 +135,7 @@ $(window).scroll(function(){
   //    document.body.style.backgroundColor = "pink";
   //   }
   // }
-  //
+	//
   // var windowSize = window.matchMedia("(max-width: 740px)")
   // scrollFade(windowSize) // Call listener function at run time
   // windowSize.addListener(scrollFade) // Attach listener function on state changes

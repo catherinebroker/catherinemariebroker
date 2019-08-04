@@ -1,0 +1,167 @@
+/* Footer */
+/*
+Pink font/bg color: #ef1965
+
+*/
+
+#footer {
+    width:100%;
+    height: 80px;
+    background: #FFF;
+    z-index: 1;
+    text-transform: uppercase;
+    bottom: 0px;
+}
+
+#footer ul {
+  list-style-type: none;
+  padding: 0;
+  padding-top: 5px;
+  overflow: hidden;
+  font-size: 14px;
+  /* top: 0; */
+  margin: 0;
+  bottom: 0px;
+}
+
+#footer ul#nav_left {
+  float: left;
+}
+
+#footer ul#nav_right {
+  float: right;
+  padding-right: 50px;
+}
+
+#footer li {
+  display: inline;
+  top: 0;
+  float: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 30px;
+}
+
+#footer li:first-child {
+  margin-top: 17px;
+  margin-left: 50px;
+  opacity: .3;
+}
+
+#footer li a {
+  color: #ef1965;
+  text-decoration: none;
+  text-align: center;
+  opacity: .6;
+  transition: .5s ease;
+}
+
+#footer li a:hover, #footer li a i:hover {
+    color: #ef1965;
+    opacity: 1;
+    cursor: pointer;
+}
+
+#footer li a button {
+  background-color: #FFF;
+  border: #ef1965 solid 1px;
+  color: #ef1965;
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: -15px;
+  font-family: serif;
+  transition: 1s ease;
+}
+
+#footer li a:hover button {
+  background-color: #ef1965;
+  color: #FFF;
+  border: #FFF solid 1px;
+  cursor: pointer;
+}
+
+#footer i {
+    font-size: 35px;
+    color: #ef1965;
+    margin-top: -12px;
+}
+
+
+/* Media Queries COMMENCE!! */
+@media screen and (max-width: 600px) {
+  #footer {
+    position: fixed;
+    height: 60px;
+    display: none;
+  }
+
+  #footer ul {
+    font-size: 14px;
+    margin: 15px auto;
+    padding: 0;
+  }
+
+  #footer ul#nav_left {
+    float: left;
+
+  }
+
+  #footer ul#nav_right {
+    float: right;
+    padding-right: 50px;
+  }
+
+  #footer li {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  #footer li#nav_left, #footer li#nav_right {
+    padding: 0;
+    margin: 0;
+  }
+
+  #footer li:first-child {
+    display:none;
+  }
+
+  #footer li a {
+    color: #ef1965;
+    text-decoration: none;
+    text-align: center;
+    opacity: .6;
+    transition: .5s ease;
+  }
+
+  #footer li a:hover, #footer li a i:hover {
+      color: #ef1965;
+      opacity: 1;
+      cursor: pointer;
+  }
+
+  #footer li a button {
+    background-color: #FFF;
+    border: #ef1965 solid 1px;
+    color: #ef1965;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: -15px;
+    font-family: serif;
+    transition: 1s ease;
+  }
+
+  #footer li a:hover button {
+
+  }
+
+  #footer i {
+      font-size: 35px;
+      color: #ef1965;
+      margin-top: -12px;
+  }
+
+}

@@ -1,0 +1,45 @@
+.w4-content img {
+    max-width: 100%;
+    text-align: left;
+}
+
+.w4-center {
+    text-align: left;
+}
+
+.w4-button{
+    border:none;
+    display:inline-block;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    color:inherit;
+    background-color:inherit;
+    cursor:pointer;
+    white-space;
+    margin-left: none;
+    width: 20%;
+    padding-right: 10%;
+    padding-top: 1%;
+    float: left;
+}
+
+.w4-button{
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none
+}   
+
+.w4-responsive{
+    display:block;
+    overflow-x:auto}
+
+.w4-button:hover{
+    color:#000!important;
+}
+
+.w4-hover-none:hover{background-color:transparent!important}
+.w4-hover-none:hover{box-shadow:none!important}

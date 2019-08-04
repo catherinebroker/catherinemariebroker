@@ -5,6 +5,8 @@
 
     <title>Code Queen: Catherine Broker</title>
 
+			<meta name="description" content="I am a Tokyo based web developer expanding the web presence of businesses and organizations, one line of code at a time!">
+
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
@@ -34,26 +36,26 @@
       <div id="codequeen">
         <img src="images/full_logo.png" alt="Code Queen" >
       </div>
-      <h2>ブローカキャサリン・ウエッブエンジニア・東京</h2>
+      <h1>ブローカキャサリン・ウエッブエンジニア・東京</h1>
     </section>
 
     <!-- Services Section -->
     <section id="section_services">
       <div class="banner">
-      <h1>Services</h1>
+      <h2>Services</h2>
       </div>
 
       <div class="details_wrapper">
       <div class="details_box service_detail">
         <img src="images/coding_graphic.png"><br>
-        <h2>CODING</h2>
+        <h3>CODING</h3>
         <p>HTML & CSS<br>
           Front end development</p>
       </div>
 
       <div class="details_box service_detail">
         <img style="height: 85px ; width: 85px" src="images/js_logo.png"><br>
-        <h2>DEVELOPMENT</h2>
+        <h3>DEVELOPMENT</h3>
           <p>Javascript<br>
             JQuery<br>
             PHP<br>
@@ -62,7 +64,7 @@
 
       <div class="details_box service_detail">
         <img style="height: 85px ; width: 85px"  src="images/wordpress_logo.png"><br>
-        <h2>FRAMEWORKS</h2>
+        <h3>FRAMEWORKS</h3>
         <p>Wordpress<br>
           Bootstrap</p>
       </div>
@@ -73,26 +75,26 @@
     <!-- Work Section -->
     <section id="section_work">
       <div class="banner">
-      <h1>Work</h1>
+      <h2>Work</h2>
       </div>
 
       <div class="details_wrapper">
         <div class="details_box work_detail" id="work_detail">
           <a href="work/circusRoppongi/index.html" target="_blank"><img src="images/circus.png" style="width: 233px;"></a><br>
-          <h2>Circus Roppongi</h2>
-          <a href="work/circusRoppongi/index.html" target="_blank"><h3>もっとを見る</h3></a>
+          <h3>Circus Roppongi</h3>
+          <a href="work/circusRoppongi/index.html" target="_blank"><h4>もっとを見る</h4></a>
         </div>
 
         <div class="details_box work_detail" id="work_detail">
           <a href="work/ezeeBuy/index.html" target="_blank" ><img src="images/ezeebuy.png" style="width: 233px;"></a><br>
-          <h2>EZEE Buy</h2>
-          <a href="work/ezeeBuy/index.html" target="_blank" ><h3>もっとを見る</h3></a>
+          <h3>EZEE Buy</h3>
+          <a href="work/ezeeBuy/index.html" target="_blank" ><h4>もっとを見る</h4></a>
         </div>
 
         <div class="details_box work_detail" id="work_detail">
           <a href="work/giftedCafeAndBar/index.php" target="_blank"><img src="images/giftedcafe.png" style="width: 233px;"></a><br>
-          <h2>GFTD CAFE &amp; BAR</h2>
-          <a href="#" target="_blank"><h3>(開発途中)</h3></a>
+          <h3>GFTD CAFE &amp; BAR</h3>
+          <a href="#" target="_blank"><h4>(開発途中)</h4></a>
           </div>
         </div>
     </section>

@@ -52,7 +52,7 @@ body {
   margin: 0 0 30px 0;
 }
 
-#section_about h4 {
+#section_about h1 {
   font-size: 1.4em;
   font-weight: 500;
   text-transform: uppercase;
@@ -328,7 +328,7 @@ body {
     text-align: center;
   }
 
-  #section_about h4 {
+  #section_about h1 {
     text-align: center;
   }
 

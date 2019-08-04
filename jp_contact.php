@@ -5,6 +5,8 @@
 
     <title>Code Queen: Catherine Broker</title>
 
+		<meta name="description" content="Send me a message and we can start on the perfect web solution to suit your business needs!">
+
         <!-- Stylesheets -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/contact.css">
@@ -30,7 +32,7 @@
         <!-- Contact Form -->
         <div id="section_contact">
           <div class="banner">
-            <h1>Contact</h1>
+            <h2>Contact</h2>
           </div>
 
           <div id="contactForm">

@@ -1,0 +1,184 @@
+/*
+Pink font/bg color: #ef1965
+Black text color: #222
+*/
+
+#navBar_mobile {
+  display: none;
+}
+
+#navBar {
+  top: 0;
+  position: sticky;
+  position: -webkit-sticky; /* Safari */
+  z-index: 1;
+  width: 100%;
+  height: 55px; /* logo 40px + top padding 15px*/
+  background-color: rgba(0, 0, 0, 0);
+  display: block;
+  padding-top: 15px;
+  text-transform: uppercase;
+}
+
+#navBar a img{
+  display: inline-block;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+#navBar ul {
+  left: 100px;
+  top: 25px;
+  margin: 0;
+  padding: 0;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  list-style-type: none;
+  font-size: 1em;
+}
+
+#navBar ul li {
+  display: inline-block;
+  padding: 0 17px;
+  vertical-align: middle;
+}
+
+#navBar ul li a {
+  color: #FFF;
+  text-decoration: none;
+  opacity: .8;
+  transition: .5s ease;
+}
+
+#navBar li a:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* Left Side Navigation */
+#navBar ul#nav_left {
+  float: left;
+}
+
+/* Right Side Navigation*/
+#navBar ul#nav_right {
+  float: right;
+  top: 15px;
+}
+
+#navBar ul#nav_right li a button {
+  background-color: rgba(0, 0, 0, 0);
+  color: #FFF;
+  border: #FFF solid 1px;
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: serif;
+  text-transform: uppercase;
+  transition: 1s ease;
+}
+
+#navBar ul#nav_right li a:hover button {
+  background-color: #FFF;
+  color: #ef1965;
+  cursor: pointer;
+}
+
+#navBar ul#nav_right li i {
+  display: none;
+}
+
+/******************** Media Queries ********************/
+
+@media screen and (max-width: 699px) {
+  #navBar {
+    display: none;
+  }
+
+  #navBar_mobile {
+    display: block;
+    width: 100%;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    z-index: 1;
+    background-color: #ef1965;
+    top: 0;
+    padding-bottom: 10px;
+  }
+
+  .navBar_mobile_buttons {
+    padding: 15px 15px 0px 15px;
+  }
+
+  .navBar_mobile_links {
+    display: none;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 17px;
+    color: #FFF;
+    width: 100%;
+    overflow: hidden;
+    margin-top: -3px;
+  }
+
+  .navBar_mobile .icon, .navBar_mobilenavMargin .icon {
+    position: absolute;
+    top: 20px ;
+    right: 20px;
+    font-size: 2em;
+    color: #FFF;
+  }
+
+  .navBar_mobileresponsive a:hover {
+    cursor: pointer;
+  }
+
+  .navBar_mobile_linksresponsive {
+    width: 100%;
+    background-color: #ef1965;
+    text-transform: uppercase;
+    overflow: hidden;
+    margin-top: 5px;
+  }
+
+  .navBar_mobile_linksresponsive a {
+      display: block;
+      text-align: center;
+      padding-bottom: 15px;
+      text-decoration: none;
+      font-size: 1.2em;
+      color: #FFF;
+  }
+
+  .navBar_mobile_linksresponsive a:hover {
+    cursor: pointer;
+  }
+
+  .navBar_mobile_linksresponsive a button {
+    background-color: #FFF;
+    border: #FFF solid 1px;
+    color: #ef1965;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: serif;
+    text-transform: uppercase;
+    transition: 1s ease;
+  }
+
+  .navBar_mobile_linksresponsive a:hover button {
+    background-color: #ef1965;
+    border: #FFF solid 1px;
+    color: #FFF;
+    cursor: pointer;
+  }
+
+  .navBar_mobilenavMargin {
+    margin-bottom: 30px;
+  }
+
+}
