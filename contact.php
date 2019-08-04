@@ -53,6 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   }
 }
 
+// 姉川がこれを見つけたら、嬉しいよ💓
 $page_flag = 0;
 
 // Check input values and send if everything is cool.
