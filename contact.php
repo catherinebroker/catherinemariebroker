@@ -3,6 +3,7 @@
 $to = "catherinemariebroker@gmail.com";
 $name = $email = $subject = $message = "";
 $nameErr = $emailErr = $subjectErr = $messageErr = $messageStatus = "";
+$page_flag = 0;
 
 //Protect input values from malicious code
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -53,8 +54,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   }
 }
 
-$page_flag = 0;
-
 // Check input values and send if everything is cool.
 if ((empty($name) || empty($email) || empty($subject) || empty($message) || $email != $mailCheck)) {
 $messageStatus = "Please check that every box has been completed, the email addresses match, and that the email address entered is valid.";
@@ -62,11 +61,14 @@ $messageStatus = "Please check that every box has been completed, the email addr
 $page_flag = 1;
 }
 
+// Confirmation
+if ($confirmed == 'true') {
+	$page_flag = 2;
+}
 
 // Send Mail
-if($page_flag == 1 && $confirmed == 'true') {
+if($page_flag == 2) {
     mail($to, $subject, $message, $email);
-    $page_flag = 2;
 }
  ?>
 
@@ -116,21 +118,21 @@ if($page_flag == 1 && $confirmed == 'true') {
           <div class="banner">
             <h2>Contact</h2>
           </div>
-					<?php var_dump($page_flag); ?>
-					<?php var_dump($confirmed); ?>
 					<div id="contactForm">
 					<?php if($page_flag == 0): ?>
 						<?php include('contact-form.php'); ?>
 					<?php elseif ($page_flag == 1): ?>
 						<?php include('confirm.php'); ?>
 					<?php else: ?>
-						<p>Thank you for your message!</p>
+						<div id="contactResults">
+						<p class="thankyou">Thank you for your message! You will get a response within a couple of business days!</p>
+						<a href="contact.php"><button type="button" id="anotherMessage" name="">Send Another Message</button></a>
+						</div>
 					<?php endif ?>
 				</div>
       </div>
 
     <!-- Footer -->
     <?php include("footer.html") ?>
-
   </body>
 </html>

@@ -1,3 +1,79 @@
+<?php
+// define variables and set to empty values
+$to = "catherinemariebroker@gmail.com";
+$name = $email = $subject = $message = "";
+$nameErr = $emailErr = $subjectErr = $messageErr = $messageStatus = "";
+$page_flag = 0;
+
+//Protect input values from malicious code
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $name = test_input($_POST["name"]);
+  $email = test_input($_POST["email"]);
+	$mailCheck = test_input($_POST["mailCheck"]);
+  $subject = test_input($_POST["subject"]);
+  $message = test_input($_POST["message"]);
+	$confirmed = $_POST["confirmed"];
+}
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+
+//Error messages
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (empty($_POST["name"])) {
+    $nameErr = "＊ 名前は記入必須です。";
+  } else {
+    $name = test_input($_POST["name"]);
+  }
+
+  if (empty($_POST["email"])) {
+    $emailErr = "＊ メールアドレスは記入必須です。";
+  } else if ($email != $mailCheck){
+		$emailErr = "* Email addresses must match.";
+	} else if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+		// check if e-mail address is well-formed
+		$emailErr = "* Invalid email format.";
+	} else {
+    $email = test_input($_POST["email"]);
+  }
+
+  if (empty($_POST["subject"])) {
+    $subjectErr = "＊ 件名は記入必須です。";
+  } else {
+    $subject = test_input($_POST["subject"]);
+  }
+
+  if (empty($_POST["message"])) {
+    $messageErr = "＊ メッセージは記入必須です。";
+  } else {
+    $message = test_input($_POST["message"]);
+  }
+}
+
+// Check input values and send if everything is cool.
+if ((empty($name) || empty($email) || empty($subject) || empty($message) || $email != $mailCheck)) {
+$messageStatus = "全部の記入項目が完成されてメールアドレスが有効かどうかを確認してください。";
+} else {
+$page_flag = 1;
+}
+
+// Confirmation
+if ($confirmed == 'true') {
+	$page_flag = 2;
+}
+
+// Send Mail
+if($page_flag == 2) {
+    mail($to, $subject, $message, $email);
+}
+ ?>
+
+ <!-- End PHP Action -->
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -43,21 +119,19 @@
           <div class="banner">
             <h2>Contact</h2>
           </div>
-
           <div id="contactForm">
-          <form method="post" action="jp_contact_action.php">
-            <p style="font-weight: 600;">＊　記入必須項目</p>
-            <p>名前：　＊<br>
-              <input type="text" placeholder="名前を書いてください。" name="name" value="" maxlength="20"></p>
-            <p>メールアドレス：　＊<br>
-              <input type="email" placeholder="メールアドレスを書いてください。" name="email" value="" maxlength="20"></p>
-            <p>件名： *<br>
-              <input type="text" placeholder="メッセージの件名を書いてください。" name="subject" value="" maxlength="20"></p>
-            <p>メッセージ：　＊<br>
-              <input type="text" placeholder="メッセージを書いてください。" name="message" value="" maxlength="1000">
-            </p>
-            <p><input type="submit" value="送信"></p>
-          </form>
+						<?php if($page_flag == 0): ?>
+							<?php include('jp_contact-form.php'); ?>
+						<?php elseif ($page_flag == 1): ?>
+							<?php include('jp_confirm.php'); ?>
+						<?php else: ?>
+							<div id="contactResults">
+							<p class="thankyou">Thank you for your message! You will get a response within a couple of business days!</p>
+							<a href="contact.php"><button type="button" id="anotherMessage" name="">Send Another Message</button></a>
+							</div>
+						<?php endif ?>
+
+          
         </div>
       </div>
 

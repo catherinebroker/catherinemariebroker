@@ -6,9 +6,8 @@ body {
 }
 
 #section_contact {
-  width: 1000px;
+  /* width: 1000px; */
   margin: 0 auto;
-  height: 100vh;
 }
 
 #section_contact #contactForm {
@@ -50,7 +49,7 @@ body {
   border-radius: 3px;
 }
 
-#section_contact input[type=submit]{
+#section_contact input[type=submit] {
   margin: 0 auto;
   color: #f71c6d;
   border: 1px solid #f71c6d;
@@ -106,28 +105,48 @@ body {
 
 #contactResults {
   padding-bottom: 50px;
-  margin: auto;
+  margin: 0 auto;
   width: 700px;
+	height: 100vh;
 }
 
-#tryAgainButton {
+#contactResults p {
+	text-align: center;
+	font-size: 18px;
+}
+
+#contactResults a {
+	text-decoration: none;
+	color: #FFF;
+}
+
+#anotherMessage {
+	margin: 75px auto 0 auto;
   background-color: #ef1965;
-  color: #FFF;
   padding: 12px 20px;
   text-align: center;
-  text-decoration: none;
   font-size: 14px;
   font-family: serif;
   text-transform: uppercase;
   transition: 1s ease;
+	display: block;
+	text-decoration: none;
+	color: #FFF;
 }
 
-#tryAgainButton:hover {
-  background-color: #FFF;
+#anotherMessage:hover {
+  background-color: rgba(0, 0, 0, 0);
   color: #ef1965;
-  border: #222 solid 1px;
+  border: #ef1965 solid 1px;
   cursor: pointer;
 }
+
+#anotherMessage:focus {
+	outline: none !important;
+  border:2px solid pink;
+  border-radius: 3px;
+}
+
 
 
 /*******************************************************/
@@ -225,15 +244,6 @@ body {
     width: 100vw;
   }
 }
-
-
-/* Media Query: Smart Phone */
-@media screen and (max-width: 740px) {
-	#section_contact input[type=submit]{
-		margin: 0 auto;
-	}
-}
-
 
 
 

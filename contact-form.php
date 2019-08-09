@@ -16,21 +16,21 @@
 	</div>
 
 	<div class="client_information_input">
-		<label>Confirm Email Address: *</label>
+		<label>Confirm Email Address: *</label><br>
 			<input type="email" placeholder="Confirm your email address here." name="mailCheck" value="<?php if (!empty($mailCheck)) {echo $mailCheck;} ?>" maxlength="20">
 	</div>
 
 	<div class="client_information_input">
-		<label>Subject: *</label>
-			<input type="text" placeholder="Write the subject of your message here." name="subject" value="" maxlength="20"><br>
+		<label>Subject: *</label><br>
+			<input type="text" placeholder="Write the subject of your message here." name="subject" value="<?php if (!empty($subject)) {echo $subject;} ?>" maxlength="20"><br>
 		<p class="error"><?php if (!empty($subjectErr)) {echo $subjectErr;} ?></p>
 	</div>
 
 	<div class="client_information_input">
-		<label>Message: *</label>
+		<label>Message: *</label><br>
 			<input type="text" placeholder="Write your message here." name="message" value="<?php if (!empty($message)) {echo $message;} ?>" maxlength="1000"><br>
 		<p class="error"><?php if (!empty($messageErr)) {echo $messageErr;} ?></p>
 	</div>
 
-	<input type="submit" value="Submit">
+	<input type="submit" name="confirm" value="confirm">
 </form>
