@@ -29,5 +29,5 @@
     <p><?php echo $message; ?></p>
   </div>
   <input type="button" value="Edit Message Info" onclick="history.back(-1)"><br>
-  <input type="submit" name="submit"></input>
+  <input type="submit" name="submit" value="Submit"></input>
 </form>

@@ -5,7 +5,16 @@
 
     <title>Code Queen: Catherine Broker</title>
 
-			<meta name="description" content="I am a Tokyo based web developer expanding the web presence of businesses and organizations, one line of code at a time!">
+		<meta property="og:title" content="Code Queen: Catherine Broker" />
+		<meta property="og:description" content="ビジネスとセールスが融合している現代では、インパクトのあるWEBサイトが必須です。日々テクノロジーは進化し、WEBサイトにアクセスできる新しい機器が作られています。企業の方々はよりもいいが必要です。企業とお客さんを繋げるためのWEBサイトを作成します。" />
+		<meta property="og:image" content="https://catherinemariebroker.com/images/CodeQueenMeta_jp.png" />
+		<meta property="og:image:width" content="700" />
+		<meta property="og:image:height" content="500" />
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://catherinemariebroker.com/jp_index.php" />
+		<meta property="og:site_name" content="Code Queen: Catherine Broker" />
+		<meta property="og:locale" content="ja_JP" />
+		<meta property="og:locale:alternate" content="en_US" />
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/style.css">

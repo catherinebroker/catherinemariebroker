@@ -53,7 +53,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   }
 }
 
-// 姉川がこれを見つけたら、嬉しいよ💓
 $page_flag = 0;
 
 // Check input values and send if everything is cool.
@@ -63,7 +62,8 @@ $messageStatus = "Please check that every box has been completed, the email addr
 $page_flag = 1;
 }
 
-// mail send
+
+// Send Mail
 if($page_flag == 1 && $confirmed == 'true') {
     mail($to, $subject, $message, $email);
     $page_flag = 2;
@@ -79,7 +79,16 @@ if($page_flag == 1 && $confirmed == 'true') {
 
     <title>Code Queen: Contact Catherine Broker</title>
 
-		<meta name="description" content="Send me a message and we can start on the perfect web solution to suit your business needs!">
+		<meta property="og:title" content="Code Queen: Contact Catherine Broker" />
+		<meta property="og:description" content="I am a Tokyo based web developer expanding the web presence of businesses and organizations, one line of code at a time!" />
+		<meta property="og:image" content="https://catherinemariebroker.com/images/CodeQueenMeta.png" />
+		<meta property="og:image:width" content="700" />
+		<meta property="og:image:height" content="500" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://catherinemariebroker.com/contact.php" />
+		<meta property="og:site_name" content="Code Queen: Catherine Broker" />
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:locale:alternate" content="ja_JP" />
 
         <!-- Stylesheets -->
         <link rel="stylesheet" href="css/style.css">
@@ -114,7 +123,6 @@ if($page_flag == 1 && $confirmed == 'true') {
 						<?php include('contact-form.php'); ?>
 					<?php elseif ($page_flag == 1): ?>
 						<?php include('confirm.php'); ?>
-
 					<?php else: ?>
 						<p>Thank you for your message!</p>
 					<?php endif ?>
@@ -124,11 +132,5 @@ if($page_flag == 1 && $confirmed == 'true') {
     <!-- Footer -->
     <?php include("footer.html") ?>
 
-
-		<script type="text/javascript">
-			function submitForm() {
-				alert("<?= $messageStatus?><?= $nameErr?><?= $emailErr?><?= $messageErr?>");
-			}
-		</script>
   </body>
 </html>
