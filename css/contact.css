@@ -28,6 +28,7 @@ body {
   text-align: left;
   text-transform: uppercase;
 	font-weight: 600;
+	font-size: 16px;
 }
 
 #contactForm input {
@@ -37,6 +38,8 @@ body {
   height: 30px;
   padding: 5px 0px 7px 0px;
 	margin-bottom: 10px;
+	font-size: 14px;
+	font-family: Georgia, sans-serif;
 }
 
 #contactForm input[type=text], #contactForm input[type=email]{
@@ -53,7 +56,7 @@ body {
   margin: 0 auto;
   color: #f71c6d;
   border: 1px solid #f71c6d;
-  font-size: 1.1em;
+  font-size: 18px;
   font-weight: lighter;
   font-family: serif;
   transition: .5s ease;
@@ -94,6 +97,7 @@ body {
   margin: 30px auto;
   color: gray;
   text-align: left;
+	font-size: 16px;
 }
 
 #section_contact p.error {
@@ -112,7 +116,7 @@ body {
 
 #contactResults p {
 	text-align: center;
-	font-size: 18px;
+	font-size: 16px;
 }
 
 #contactResults a {
@@ -125,7 +129,7 @@ body {
   background-color: #ef1965;
   padding: 12px 20px;
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
   font-family: serif;
   text-transform: uppercase;
   transition: 1s ease;

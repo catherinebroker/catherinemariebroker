@@ -40,12 +40,15 @@ body {
 }
 
 
-/* ---------- Top Section (with the logo) ---------- */
+/* --------------------------
+Top Section (with the logo)
+-------------------------- */
 #section_top {
   height:100vh;
   display: block;
 }
 
+/* Code Queen Logo and Fade in Animation*/
 #codequeen img{
   display: block;
   margin:auto;
@@ -56,6 +59,32 @@ body {
   height: auto;
 }
 
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:.1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.fade-in#codequeen{
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
 #section_top h1 {
     color: white;
     text-align: center;
@@ -63,7 +92,9 @@ body {
     font-size: 2em;
 }
 
-/* ---------- Services Section ---------- */
+/* --------------------
+Services Section
+-------------------- */
 #section_services {
   height: 100vh;
   width: 1000px;
@@ -93,7 +124,9 @@ body {
   letter-spacing: 0.15em;
 }
 
-/* ---------- Work Section ---------- */
+/* ------------------------------
+Work Section
+------------------------------ */
 #section_work {
   height: 100vh;
   width: 1000px;
@@ -188,7 +221,9 @@ body:before {
     height: auto;
   }
 
-  /* ---------- Services Section ---------- */
+  /* ------------------------------
+	Services Section
+	------------------------------ */
   #section_services {
     height: auto;
     width: 100vw;
@@ -217,7 +252,9 @@ body:before {
     letter-spacing: 0.15em;
   }
 
-  /* ---------- Work Section ---------- */
+  /* -----------------------------
+	Work Section
+	------------------------------ */
   #section_work {
     width: 100vw;
     text-align: center;

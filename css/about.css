@@ -63,6 +63,7 @@ body {
 #section_about p {
   color: #222;
   line-height: 1.5em;
+	font-size: 16px;
 }
 
 /************* Resume Links *************/
@@ -124,7 +125,7 @@ body {
 #skills .skillset label {
   padding-bottom: 20px;
   color: #222;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 

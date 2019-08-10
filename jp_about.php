@@ -52,7 +52,7 @@
 
       <div id="about_introduction">
         <div id="catchphrase">
-          <h3>会社と団体のウエッブサイト作りサービス</h3>
+          <h3>会社と団体のWEBサイト作りサービス</h3>
         </div>
 
         <article>

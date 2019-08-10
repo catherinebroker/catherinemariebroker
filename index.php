@@ -41,7 +41,7 @@
 
     <!-- Top Section -->
     <section id="section_top">
-      <div id="codequeen">
+      <div id="codequeen" class="fade-in">
         <img src="images/full_logo.png" alt="Code Queen" >
       </div>
       <h1>Catherine Broker・Web Developer・Tokyo, Japan</h1>

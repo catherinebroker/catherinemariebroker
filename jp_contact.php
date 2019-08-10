@@ -33,10 +33,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($_POST["email"])) {
     $emailErr = "＊ メールアドレスは記入必須です。";
   } else if ($email != $mailCheck){
-		$emailErr = "* Email addresses must match.";
+		$emailErr = "* 同じメールアドレスを入力してください。";
 	} else if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 		// check if e-mail address is well-formed
-		$emailErr = "* Invalid email format.";
+		$emailErr = "* 正しいメールアドレスを入力してください。";
 	} else {
     $email = test_input($_POST["email"]);
   }
@@ -56,7 +56,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 // Check input values and send if everything is cool.
 if ((empty($name) || empty($email) || empty($subject) || empty($message) || $email != $mailCheck)) {
-$messageStatus = "全部の記入項目が完成されてメールアドレスが有効かどうかを確認してください。";
+$messageStatus = "以下の項目を全て入力してください。";
 } else {
 $page_flag = 1;
 }
@@ -126,12 +126,14 @@ if($page_flag == 2) {
 							<?php include('jp_confirm.php'); ?>
 						<?php else: ?>
 							<div id="contactResults">
-							<p class="thankyou">Thank you for your message! You will get a response within a couple of business days!</p>
-							<a href="contact.php"><button type="button" id="anotherMessage" name="">Send Another Message</button></a>
+							<p class="thankyou">お問い合わせ頂き有難う御座います！<br>
+								3営業日以内にご連絡させて頂きます。
+							</p>
+							<a href="contact.php"><button type="button" id="anotherMessage" name="">別のお問い合わせをする</button></a>
 							</div>
 						<?php endif ?>
 
-          
+
         </div>
       </div>
 

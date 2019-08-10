@@ -28,6 +28,6 @@
     <label>メッセージ：</label>
     <p><?php echo $message; ?></p>
   </div>
-  <input type="button" value="Edit Message Info" onclick="history.back(-1)"><br>
+  <input type="button" value="メッセージを修正する" onclick="history.back(-1)"><br>
   <input type="submit" name="submit" value="送信"></input>
 </form>

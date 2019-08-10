@@ -35,7 +35,7 @@ Black text color: #222
   position: -webkit-sticky; /* Safari */
   position: sticky;
   list-style-type: none;
-  font-size: 1em;
+  font-size: 16px;
 }
 
 #navBar ul li {
@@ -74,7 +74,7 @@ Black text color: #222
   padding: 6px 12px;
   text-align: center;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
   font-family: serif;
   text-transform: uppercase;
   transition: 1s ease;
