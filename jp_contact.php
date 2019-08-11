@@ -132,9 +132,7 @@ if($page_flag == 2) {
 							<a href="contact.php"><button type="button" id="anotherMessage" name="">別のお問い合わせをする</button></a>
 							</div>
 						<?php endif ?>
-
-
-        </div>
+        	</div>
       </div>
 
     <!-- Footer -->
